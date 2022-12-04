@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+<configuration>
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>local</value>
+    </property>
+    <!-- <property> -->
+        <!-- <name>mapreduce.framework.name</name> -->
+        <!-- <value>yarn-tez</value> -->
+    <!-- </property> -->
+    <property>
+        <name>yarn.log-aggregation-enable</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>yarn.resourcemanager.address</name>
+        <value>Junzhu.local:8032</value>
+    </property>
+    <property>
+      <name>yarn.resourcemanager.scheduler.address</name>
+      <value>Junzhu.local:8030</value>
+    </property>
+    <property>
+      <name>yarn.resourcemanager.resource-tracker.address</name>
+      <value>Junzhu.local:8031</value>
+    </property>
+    <property>
+        <name>yarn.scheduler.minimum-allocation-mb</name>
+        <value>512</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.resource.memory-mb</name>
+        <value>8096</value>
+    </property>
+    <property>
+      <name>yarn.nodemanager.vmem-check-enabled</name>
+      <value>true</value>
+    </property>
+    <property>
+      <name>yarn.nodemanager.vmem-pmem-ratio</name>
+      <value>5</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage</name>
+        <value>98.8</value>
+    </property>
+    <property>
+        <name>mapreduce.jobhistory.intermediate-done-dir</name>
+        <value>/user/history/done_intermediate</value>
+    </property>
+    <property>
+        <name>mapreduce.jobhistory.done-dir</name>
+        <value>/user/history/done</value>
+    </property>
+    <property>
+      <name>yarn.app.mapreduce.am.staging-dir</name>
+      <value>/tmp/hadoop-yarn/staging</value>
+    </property>
+    <property>
+      <name>yarn.log.server.url</name>
+      <value>http://Junzhu.local:19888/jobhistory/logs</value>
+    </property>
+<!--    <property>-->
+<!--        <name>yarn.application.classpath</name>-->
+<!--        <value>/Users/jun.zhu/apps/hadoop-3.1.0/share/hadoop/common/lib/*:/Users/jun.zhu/apps/hadoop-3.1.0/share/hadoop/common/*:/Users/jun.zhu/apps/hadoop-3.1.0/share/hadoop/hdfs:/Users/jun.zhu/apps/hadoop-3.1.0/share/hadoop/hdfs/lib/*:/Users/jun.zhu/apps/hadoop-3.1.0/share/hadoop/hdfs/*:/Users/jun.zhu/apps/hadoop-3.1.0/share/hadoop/mapreduce/*:/Users/jun.zhu/apps/hadoop-3.1.0/share/hadoop/yarn/lib/*:/Users/jun.zhu/apps/hadoop-3.1.0/share/hadoop/yarn/*:/Users/jun.zhu/apps/hadoop-3.1.0/etc/hadoop</value>-->
+<!--    </property>-->
+</configuration>
